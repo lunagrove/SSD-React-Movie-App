@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lunagrove/SSD-React-Movie-App.git/static/css/main.2b550a9e.css",
+    "main.js": "/lunagrove/SSD-React-Movie-App.git/static/js/main.0ed2408b.js",
+    "static/media/starrynight.jpg": "/lunagrove/SSD-React-Movie-App.git/static/media/starrynight.91c8f1037db217d92118.jpg",
+    "index.html": "/lunagrove/SSD-React-Movie-App.git/index.html",
+    "main.2b550a9e.css.map": "/lunagrove/SSD-React-Movie-App.git/static/css/main.2b550a9e.css.map",
+    "main.0ed2408b.js.map": "/lunagrove/SSD-React-Movie-App.git/static/js/main.0ed2408b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b550a9e.css",
+    "static/js/main.0ed2408b.js"
+  ]
+}
