@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lunagrove/SSD-React-Movie-App.git/static/css/main.2b550a9e.css",
-    "main.js": "/lunagrove/SSD-React-Movie-App.git/static/js/main.c7220099.js",
-    "static/media/starrynight.jpg": "/lunagrove/SSD-React-Movie-App.git/static/media/starrynight.91c8f1037db217d92118.jpg",
-    "index.html": "/lunagrove/SSD-React-Movie-App.git/index.html",
-    "main.2b550a9e.css.map": "/lunagrove/SSD-React-Movie-App.git/static/css/main.2b550a9e.css.map",
-    "main.c7220099.js.map": "/lunagrove/SSD-React-Movie-App.git/static/js/main.c7220099.js.map"
+    "main.css": "/lunagrove/SSD-React-Movie-App/static/css/main.33c4bd8c.css",
+    "main.js": "/lunagrove/SSD-React-Movie-App/static/js/main.924d1bbd.js",
+    "static/media/starrynight.jpg": "/lunagrove/SSD-React-Movie-App/static/media/starrynight.91c8f1037db217d92118.jpg",
+    "index.html": "/lunagrove/SSD-React-Movie-App/index.html",
+    "main.33c4bd8c.css.map": "/lunagrove/SSD-React-Movie-App/static/css/main.33c4bd8c.css.map",
+    "main.924d1bbd.js.map": "/lunagrove/SSD-React-Movie-App/static/js/main.924d1bbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b550a9e.css",
-    "static/js/main.c7220099.js"
+    "static/css/main.33c4bd8c.css",
+    "static/js/main.924d1bbd.js"
   ]
 }
