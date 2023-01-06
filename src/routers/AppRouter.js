@@ -1,7 +1,7 @@
 // AppRouter
 
 // Router Components
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import Header from "../components/Header";
@@ -16,12 +16,13 @@ import PageNotFound from "../pages/PageNotFound";
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <div className="wrapper">
         <main>
           <Routes>
             <Route path="/" exact element={<PageHome />} />
+            <Route path="/SSD-React-Movie-App" exact element={<PageHome />} />
             <Route path="/favourites" element={<PageFavourites />} />
             <Route path="/about" element={<PageAbout />} />
             <Route path="/contact" element={<PageContact />} />
@@ -31,7 +32,7 @@ function AppRouter() {
         </main>
       </div>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
