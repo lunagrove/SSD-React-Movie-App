@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lunagrove/SSD-React-Movie-App/static/css/main.33c4bd8c.css",
-    "main.js": "/lunagrove/SSD-React-Movie-App/static/js/main.24ae4cec.js",
+    "main.js": "/lunagrove/SSD-React-Movie-App/static/js/main.f117da0e.js",
     "static/media/starrynight.jpg": "/lunagrove/SSD-React-Movie-App/static/media/starrynight.91c8f1037db217d92118.jpg",
     "index.html": "/lunagrove/SSD-React-Movie-App/index.html",
     "main.33c4bd8c.css.map": "/lunagrove/SSD-React-Movie-App/static/css/main.33c4bd8c.css.map",
-    "main.24ae4cec.js.map": "/lunagrove/SSD-React-Movie-App/static/js/main.24ae4cec.js.map"
+    "main.f117da0e.js.map": "/lunagrove/SSD-React-Movie-App/static/js/main.f117da0e.js.map"
   },
   "entrypoints": [
     "static/css/main.33c4bd8c.css",
-    "static/js/main.24ae4cec.js"
+    "static/js/main.f117da0e.js"
   ]
 }
