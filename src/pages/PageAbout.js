@@ -1,7 +1,7 @@
 // Page - About
 
 import { useEffect } from 'react';
-import { appTitle } from '../globals/globals';
+import { appTitle, imageFolderPath } from '../globals/globals';
 
 const PageAbout = () => {
 
@@ -22,7 +22,7 @@ const PageAbout = () => {
 			<p>	Users can view individual movie details, and flag movies as favourites.
 			</p>
 			<p className="about-text">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
-			<img className="moviedb-logo2-about" src="../assets/images/movieDB.svg" alt="MovieDB logo"></img>
+			<img className="moviedb-logo2-about" src={`${imageFolderPath}movieDB.svg`} alt="MovieDB logo"></img>
 			<p>Background image - Photo by <a className="image-credit-about" href="https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Thomas</a> on <a className="image-credit-about" href="https://unsplash.com/s/photos/starry-night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>
 		</section>
