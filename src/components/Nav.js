@@ -10,7 +10,7 @@ const Nav = () => {
   }
 
   return (
-    <nav className="main-nav" onClick={blur}>
+    <nav className="main-nav" id="main-navigation" onClick={blur}>
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>

@@ -6,10 +6,17 @@ import { appTitle } from "../globals/globals";
 
 const Header = () => {
   return (
-    <header>
-      <h1><Link to="/">{appTitle}</Link></h1>
+    <>
+      <header>
+        <button className="btn-menu" id="btn-menu">
+            <span className="button-content" tabIndex="-1">
+            <span className="sr-only">Menu</span>
+            <span className="bar" id="bar"></span> </span>
+        </button>
+        <h1><Link to="/">{appTitle}</Link></h1>
+      </header>
       <Nav />
-    </header>
+    </>
   );
 };
 
