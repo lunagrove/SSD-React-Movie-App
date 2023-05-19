@@ -9,7 +9,7 @@ const PageContact = () => {
   }, []);
 
   return (
-    <section>
+    <>
       <h2 className="page-header">Contact Me</h2>
       <p>By email:</p>
       <ul className="email-info">
@@ -26,7 +26,7 @@ const PageContact = () => {
           (236)978 8383
         </li>
       </ul>
-    </section>
+    </>
   );
 };
 

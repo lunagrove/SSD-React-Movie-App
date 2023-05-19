@@ -54,14 +54,12 @@ const PageMovie = () => {
 		fetchMovieImages()}, [id]);
 	
 	return (
-		<section>
-			<MovieDetail
-				key={id}
-				movie={movieInfo}
-				isFavourite={isFavourite(favourites, null, id)}
-				images={movieImages}
-          	/>
-		</section>
+		<MovieDetail
+			key={id}
+			movie={movieInfo}
+			isFavourite={isFavourite(favourites, null, id)}
+			images={movieImages}
+		/>
 	);
 	
 };

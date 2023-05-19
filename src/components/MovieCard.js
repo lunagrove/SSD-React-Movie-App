@@ -22,7 +22,7 @@ function MovieCard({ movie, isFavourite }) {
   
   return (
       <div className="card" key={movie.id}>
-          <div> 
+          <div className="card-content"> 
           <>{movie.poster_path ? (
               <img src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={`Poster for movie ${movie.title}`}></img>
             ) : (
