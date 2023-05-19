@@ -48,10 +48,10 @@ const PageMovie = () => {
 		document.title = `${appTitle} - Movie Info ${id};`}, [id]);
 
 	useEffect(() => {
-		fetchMovieInfo()}, [movieInfo]);
+		fetchMovieInfo()}, []);
 
 	useEffect(() => {
-		fetchMovieImages()}, [id]);
+		fetchMovieImages()}, []);
 	
 	return (
 		<MovieDetail
