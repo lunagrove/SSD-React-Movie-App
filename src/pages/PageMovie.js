@@ -13,45 +13,43 @@ const PageMovie = () => {
 	let { id } = useParams();
 	id = id * 1;
 
-	const endPointMovieDetail = `https://api.themoviedb.org/3/movie/${id}?api_key=41b73a2927849ee57e089201cfdc5d95`;
-
-	const endPointMovieImages = `https://api.themoviedb.org/3/movie/${id}/images?api_key=41b73a2927849ee57e089201cfdc5d95`;
-
 	const [movieInfo, setMovieInfo] = useState([]);
 	const [movieImages, setMovieImages] = useState([]);
 
-	const fetchMovieInfo = async () => {
-		let results = "";
-		try {
-		  results = await fetch(endPointMovieDetail); 
-		  const movieDetail = await results.json();
-		  setMovieInfo(movieDetail);		  
-		} catch (err) {
-		  console.log("error loading movie detail", err, "using defaults");
-		}
-	};
-
-	const fetchMovieImages = async () => {
-		let results = "";
-		try {
-		  results = await fetch(endPointMovieImages);
-		  const movieImgs = await results.json();
-		  const movieI = movieImgs.backdrops.slice(1, 7);
-		  setMovieImages(movieI);
-		  
-		} catch (err) {
-		  console.log("error loading movie images", err, "using defaults");
-		}
-	};
+	useEffect(() => {
+		document.title = `${appTitle} - Movie Info ${id}`}, [id]);
 
 	useEffect(() => {
-		document.title = `${appTitle} - Movie Info ${id};`}, [id]);
-
+		const fetchMovieInfo = async () => {
+			const endPointMovieDetail = `https://api.themoviedb.org/3/movie/${id}?api_key=41b73a2927849ee57e089201cfdc5d95`;
+			let results = "";
+			try {
+			  results = await fetch(endPointMovieDetail); 
+			  const movieDetail = await results.json();
+			  setMovieInfo(movieDetail);		  
+			} catch (err) {
+			  console.log("error loading movie detail", err, "using defaults");
+			}
+		};
+		fetchMovieInfo();
+	}, [id]);
+		
 	useEffect(() => {
-		fetchMovieInfo()}, []);
-
-	useEffect(() => {
-		fetchMovieImages()}, []);
+		const fetchMovieImages = async () => {
+			const endPointMovieImages = `https://api.themoviedb.org/3/movie/${id}/images?api_key=41b73a2927849ee57e089201cfdc5d95`;
+			let results = "";
+			try {
+			  results = await fetch(endPointMovieImages);
+			  const movieImgs = await results.json();
+			  const movieI = movieImgs.backdrops.slice(1, 7);
+			  setMovieImages(movieI);
+			  
+			} catch (err) {
+			  console.log("error loading movie images", err, "using defaults");
+			}
+		};
+		fetchMovieImages();
+	}, [id]);
 	
 	return (
 		<MovieDetail
