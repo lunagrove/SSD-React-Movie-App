@@ -39,9 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://lunagrove.github.io/SSD-React-Movie-App",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
