@@ -30,8 +30,21 @@ body {
   max-width: 100%;
   color: #ffffff;
   display: block;
-  background-image: url(/public/assets/images/starrynight.jpg);
+  /* background-image: url(/public/assets/images/starrynight.jpg);
   background-size: cover; 
+  background-attachment: fixed; */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(/public/assets/images/starrynight.jpg);
+  background-size: cover;
   background-attachment: fixed;
 }
 
